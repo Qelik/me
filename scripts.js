@@ -4,12 +4,26 @@ $(document).ready(function() {
     console.log(url);
 
     if ("url:contains('index')") {
-        $(".navbar-nav li:nth-child(0)").addClass('active');
+        $("#home").addClass('active');
+        $("#projects").removeClass('active');
+        $("#contact").removeClass('active');
     } else if ("url:contains('projects')") {
-        $(".navbar-nav li:nth-child(1)").addClass('active');
-    } else ("url:contains('contact')")
-    {
-        $(".navbar-nav li:nth-child(2)").addClass('active');
+        $("#home").removeClass('active');
+        $("#projects").addClass('active');
+        $("#contact").removeClass('active');
+    } else if ("url:contains('contact')") {
+        $("#home").removeClas('active');
+        $("#projects").removeClass('active');
+        $("#contact").addClasss('active');
     }
+});
 
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 50) {
+        $('#navi').addClass('bg-2elev');
+        $('#navi').removeClass('bg-1elev');
+    } else {
+        $('#navi').addClass('bg-1elev');
+        $('#navi').removeClass('bg-2elev');
+    }
 });
