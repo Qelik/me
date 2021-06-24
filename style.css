@@ -1,3 +1,7 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     background-color: #121212 !important;
     scroll-behavior: smooth;
@@ -94,28 +98,14 @@ input:checked + .slider:before {
 
 /*---- hero images ----*/
 
-/*.hero {*/
-/*    !*-webkit-filter: grayscale(50%); !* Safari 6.0 - 9.0 *!*!*/
-/*    !*filter: grayscale(50%);*!*/
-/*    background-image: url('images/cover.jpg');*/
-/*    background-size: cover;*/
-/*    height: 100vh !important;*/
-/*    display: block;*/
-/*    position: relative;*/
-/*}*/
+#big {
+    font-size: 100px;
+}
 
-/*.hero::after {*/
-/*    content: "";*/
-/*    background: rgba(0, 0, 0, 0.7);*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    z-index: 1;*/
-/*    border-radius: .25rem!important;*/
-/*}*/
+/*---- responsive ----*/
 
-/*.hero > * {*/
-/*    z-index: 10;*/
-/*}*/
+@media only screen and (min-width: 600px) {
+    #logo-web {
+        display: none;
+    }
+}
